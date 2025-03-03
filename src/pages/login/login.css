@@ -1,0 +1,93 @@
+/* Container geral da página */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+  }
+  
+  /* Caixa de login */
+  .login-box {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  /* Título */
+  .login-box h1 {
+    color: #ff5722;
+    margin-bottom: 1rem;
+  }
+  
+  /* Parágrafo de descrição */
+  .login-box p {
+    color: #555;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Formulário */
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  /* Campos de entrada */
+  .login-form input {
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  .login-form input:focus {
+    border-color: #ff5722;
+  }
+  
+  /* Botão de login */
+  .login-form button {
+    padding: 0.8rem;
+    font-size: 1rem;
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .login-form button:hover {
+    background-color: #e64a19;
+  }
+  
+  /* Link de cadastro */
+  .register-link {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .register-link a {
+    color: #ff5722;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .register-link a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 600px) {
+    .login-box {
+      padding: 1.5rem;
+    }
+  }
+  

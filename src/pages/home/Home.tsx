@@ -1,20 +1,24 @@
 import { useState } from "react";
+import "./Home.css"; // Importando o CSS
 
 const Home: React.FC = () => {
   const [search, setSearch] = useState("");
 
   return (
     <div className="home">
+      {/* Seção de busca */}
       <section className="search-section">
         <input
           type="text"
           placeholder="Buscar jogador..."
           value={search}
           onChange={(e) => setSearch(e.target.value)}
+          className="search-input"
         />
-        <button>Buscar</button>
+        <button className="search-button">Buscar</button>
       </section>
 
+      {/* Seção de estatísticas */}
       <section className="player-stats">
         <h2>🏀 Estatísticas do Jogador</h2>
         <div className="player-card">
