@@ -1,35 +1,16 @@
-import { useState } from "react";
-import "./App.css";
+import { Outlet } from "react-router-dom";
+import "./global.css";
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
 
 function App() {
-  const [search, setSearch] = useState("");
-
   return (
     <div className="container">
-      {/* Cabeçalho */}
-      <header className="header">
-        <h1>MyProps</h1>
-        <p>Estatísticas de jogadores da NBA</p>
-      </header>
-
-      {/* Barra de busca */}
-      <div className="search-bar">
-        <input
-          type="text"
-          placeholder="Buscar jogador..."
-          value={search}
-          onChange={(e) => setSearch(e.target.value)}
-        />
-        <button>Buscar</button>
-      </div>
-
-      {/* Exemplo de estatística */}
-      <div className="player-card">
-        <h2>LeBron James</h2>
-        <p>Pontos por jogo: 27.2</p>
-        <p>Assistências por jogo: 7.3</p>
-        <p>Rebotes por jogo: 7.5</p>
-      </div>
+      <Header />
+      <main className="main">
+        <Outlet /> {/* Aqui as páginas são renderizadas */}
+      </main>
+      <Footer />
     </div>
   );
 }
