@@ -42,6 +42,13 @@ const Header: React.FC = () => {
               Como Funciona
               <span className="absolute bottom-0 left-0 w-0 h-1 bg-gradient-to-r from-orange-500 to-red-600 group-hover:w-full transition-all duration-300"></span>
             </Link>
+            <Link 
+              to="/jogo" 
+              className="relative px-6 py-4 text-gray-700 hover:text-gray-900 font-medium transition-all duration-200 group rounded-xl hover:bg-gray-50"
+            >
+              🏆 Quem é o Melhor?
+              <span className="absolute bottom-0 left-0 w-0 h-1 bg-gradient-to-r from-orange-500 to-red-600 group-hover:w-full transition-all duration-300"></span>
+            </Link>
             <div className="ml-8">
               <Link 
                 to="/login" 
@@ -87,6 +94,13 @@ const Header: React.FC = () => {
                 onClick={() => setIsMenuOpen(false)}
               >
                 Como Funciona
+              </Link>
+              <Link 
+                to="/jogo" 
+                className="block px-6 py-4 text-gray-700 hover:text-gray-900 hover:bg-gray-50 rounded-xl font-medium transition-colors duration-200"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                🏆 Quem é o Melhor?
               </Link>
               <Link 
                 to="/login" 

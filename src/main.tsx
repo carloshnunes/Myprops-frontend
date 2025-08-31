@@ -7,6 +7,7 @@ import QuemSomos from "./pages/quemsomos/QuemSomos";
 import ComoFunciona from "./pages/comofunciona/ComoFunciona";
 import Login from "./pages/login/Login";
 import PlayerDetails from "./pages/player/PlayerDetails";
+import Jogo from "./pages/jogo/Jogo";
 import './index.css';
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
@@ -17,6 +18,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
           <Route index element={<Home />} />
           <Route path="quem-somos" element={<QuemSomos />} />
           <Route path="como-funciona" element={<ComoFunciona />} />
+          <Route path="jogo" element={<Jogo />} />
           <Route path="login" element={<Login />} />
           <Route path="player/:playerName" element={<PlayerDetails />} />
         </Route>
